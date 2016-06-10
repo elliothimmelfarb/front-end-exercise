@@ -1,8 +1,9 @@
 div {
-   border: 1px solid white;
+   //border: 1px solid white;
 }
 
-a, p {
+a,
+p {
    font-size: 13px;
    font-family: arial, sans-serif;
    opacity: 0.75;
@@ -20,8 +21,7 @@ a, p {
 
 .topNav {
    height: 30px;
-   margin-top: 5px;
-   position: absolute;
+   margin-top: 15px;
    width: 100%;
    min-width: inherit;
 }
@@ -54,10 +54,14 @@ a, p {
    width: 57px;
 }
 
-
 .textLink {
    padding-right: 10px;
    text-decoration: none;
+}
+
+.textLink:hover {
+   text-decoration: underline;
+   opacity: 1;
 }
 
 .appsLink {
@@ -114,7 +118,7 @@ a, p {
    height: 233px;
    text-align: center;
    margin-top: 79px;
-} 
+}
 
 .searchBlock {
    height: 128px;
@@ -130,14 +134,89 @@ a, p {
 }
 
 .inputDiv {
-   border: 1px solid #B9B9B9;
-   height: 40px;
+   border: 1px solid #D6D6D6;
+   height: 30px;
    width: inherit;
    max-width: 600px;
    margin: auto;
+   padding-right: 45px;
+   padding-top: 10px;
+   padding-left: 9px;
+}
+
+.inputDiv
+
+.input {
+   width: 100%;
+   /*opacity: 0;*/
+   font: 16px arial, sans-serif;
+   border: none;
+   resize: none;
+}
+
+.mic {
+   height: 20px;
+   float: right;
+   margin-right: -31px;
+   margin-top: -27px;
+}
+
+.input:focus {
+   outline: 0;
+}
+
+.button {
+   -webkit-appearance: push-button;
+   white-space: pre;
+   align-items: flex-start;
+   background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+   border: 1px solid #f2f2f2;
+   border-radius: 2px;
+   font-family: arial, sans-serif;
+   font-size: 13px;
+   font-weight: bold;
+   margin: 11px 4px;
+   padding: 10px 16px;
+}
+
+.button:hover {
+   border: 1px solid #c6c6c6;
+   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.buttonDiv {
+   margin-top: 18px;
+}
+
+.fLeft {
+   float: left;
+}
+
+.fRight {
+   float: right;
+}
+
+.fLink {
+   padding-right: 27px;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: small;
+}
+
+.space {
+   margin-left: 1px;
 }
 
 .footer {
    height: 45px;
    vertical-align: text-bottom;
+   background-color: #F1F1F1;
+   border-top: 1px solid #E2E2E2;
+   margin: 0 -8px;
+   padding-left: 27px;
+   position: fixed;
+   bottom: 0;
+   width: 98%;
+   padding-right: 0px;
 }
